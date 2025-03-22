@@ -6,28 +6,20 @@ def dice():
 summe = dice()
 print("                        -- 🎲NUR HEUTE🎲 --                                 ",summe +2 )
 print("Das Schätzchenspiel: 3 D6-Würfel in einem Becher. "        #Titel
-      "Schätze einfach die Summe der Augen =) viel Glück.")
+print("Schätze einfach die Summe der Augen =) viel Glück.")
+      
 i = int(0)                                      # Das ist die Bedingung, damit sich das Spiel nicht wiederholt wenn man gewonnen hat(also zu gewinnen ist die Bedingung)
 v=int(3)
 def new_func():
     return 1
 while i < 1:                                    #die Schleife wiederholt sich immer wieder auch wenn man die zahl errät!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
  
- print(v,"Versuche insgesamt")
- z = int(input("Dein Tipp?:"))                                     #first try
- if z is summe:
+print(v,"Versuche insgesamt")
+z = int(input("Dein Tipp?:"))                                     #first try
+if z is summe:
     print(z,"ist richtig! Du bekommst den Hauptgewinn!!😊😊😊 ")
     i += 1
-    r: int = int(input("Deine nächste Runde kostet nur einen Euro:"))
-    if r is e:
-        print("Neuer Versuch, neues Glück!")
-    else:
-        print("genau 1 Euro bitte")
-        r: int = int(input("Hier bezahlen:"))
-        if r is e:
-            print("vielen Danke für die Bezahlung=)Neuer Versuch, neues Glück!")
-            i -= 1
- else:
+else:
     print(z,"ist leider falsch, das Ergebnis")
     print("ist übrigens mehr als",a,)
     (v) = v-1
@@ -37,19 +29,10 @@ while i < 1:                                    #die Schleife wiederholt sich im
      if z is summe:
          print(z, "ist richtig!! Du hast gewonnen! 😊😊")
          i += 1
-         r: int = int(input("Deine nächste Runde kostet nur einen Euro:"))
-         if r is e:
-             print("Neuer Versuch, neues Glück!")
-         else:
-             print("genau 1 Euro bitte")
-             r: int = int(input("Hier bezahlen:"))
-             if r is e:
-                 print("vielen Danke für die Bezahlung=)Neuer Versuch, neues Glück!")
-                 i -= 1
                  
      else:
          print(z, "ist nicht korrekt. Schade Banane, knapp daben ist vorbei )=")
-         print("das Ergebnis ist ca.:", a + b, )
+         print("das Ergebnis ist ca.:",summe - 2 )
          (v) = v - 1
          print("nur noch", v, "Versuch übrig.")
          z: int = int(input("Wie lautet dein finaler Tipp?:"))     #third try
@@ -72,7 +55,7 @@ while i < 1:                                    #die Schleife wiederholt sich im
                      
          else:
              print(z, "ist es auch nicht...das war deine letzte Chance.")
-             print("Es war natürlich", d, "hätte man sich ja auch denken können")
+             print("Es war natürlich", summe, "hätte man sich ja auch denken können")
              (v) = v - 1
              print(v, "Versuche übrig, aber nächstes mal schaffst du es bestimmt :3")
 
